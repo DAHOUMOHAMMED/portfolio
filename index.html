@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mohammed Dahou | Ingénieur Électronique & Systèmes Embarqués</title>
+  <meta name="description" content="Portfolio de Mohammed Dahou, ingénieur électronique et systèmes embarqués : firmware C, bancs de test, IoT industriel, bus CAN et Modbus.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="bg"></canvas>
+
+  <!-- ============ MENU ============ -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#accueil" class="logo">Mohammed Dahou</a>
+
+      <nav class="nav-links">
+        <a href="#apropos"     data-fr="À propos"    data-en="About">À propos</a>
+        <a href="#parcours"    data-fr="Parcours"    data-en="Experience">Parcours</a>
+        <a href="#projets"     data-fr="Projets"     data-en="Projects">Projets</a>
+        <a href="#competences" data-fr="Compétences" data-en="Skills">Compétences</a>
+        <a href="#contact"     data-fr="Contact"     data-en="Contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang">
+          <button class="lang-btn active" data-lang="fr">FR</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <a class="btn btn-primary" href="cv.pdf" download data-fr="CV" data-en="CV">CV</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section id="accueil" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Mohammed <span class="gradient">Dahou</span></h1>
+          <h2 data-fr="Ingénieur Électronique & Systèmes Embarqués"
+              data-en="Electronics & Embedded Systems Engineer">Ingénieur Électronique & Systèmes Embarqués</h2>
+          <p data-fr="Je conçois des bancs de test et des solutions IoT industrielles : firmware en C sur STM32 et ATmega, bus CAN, Modbus, LoRaWAN et interfaces de supervision."
+             data-en="I design test benches and industrial IoT solutions: C firmware on STM32 and ATmega, CAN bus, Modbus, LoRaWAN and supervision interfaces.">
+            Je conçois des bancs de test et des solutions IoT industrielles : firmware en C sur STM32 et ATmega, bus CAN, Modbus, LoRaWAN et interfaces de supervision.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary" data-fr="Me contacter" data-en="Contact me">Me contacter</a>
+            <a href="#projets" class="btn btn-ghost" data-fr="Voir mes projets" data-en="See my projects">Voir mes projets</a>
+          </div>
+          <p class="hero-meta">📍 Lyon, France &nbsp;·&nbsp; 🎓 Master Électronique, Instrumentation & Informatique Embarquée</p>
+        </div>
+
+        <div class="hero-visual card">
+          <img src="images/photo_profil.jpg" alt="Mohammed Dahou">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ À PROPOS ============ -->
+    <section id="apropos" class="section">
+      <div class="container about">
+
+        <div class="about-visual card domains">
+          <h3 data-fr="Domaines d'application" data-en="Application domains">Domaines d'application</h3>
+          <ul>
+            <li>
+              <span class="dom-icon">📡</span>
+              <div>
+                <strong>IoT</strong>
+                <p data-fr="Capteurs intelligents et passerelles (LoRa/LoRaWAN, Zigbee, Modbus)"
+                   data-en="Smart sensors and gateways (LoRa/LoRaWAN, Zigbee, Modbus)">Capteurs intelligents et passerelles (LoRa/LoRaWAN, Zigbee, Modbus)</p>
+              </div>
+            </li>
+            <li>
+              <span class="dom-icon">⚡</span>
+              <div>
+                <strong data-fr="Énergie" data-en="Energy">Énergie</strong>
+                <p data-fr="Bâtiments connectés et sites industriels"
+                   data-en="Connected buildings and industrial sites">Bâtiments connectés et sites industriels</p>
+              </div>
+            </li>
+            <li>
+              <span class="dom-icon">💧</span>
+              <div>
+                <strong data-fr="Télérelève" data-en="Remote metering">Télérelève</strong>
+                <p data-fr="Remontée de mesures à distance (ex. capteurs de niveau d'eau)"
+                   data-en="Remote measurement collection (e.g. water level sensors)">Remontée de mesures à distance (ex. capteurs de niveau d'eau)</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <span class="eyebrow" data-fr="À propos" data-en="About">À propos</span>
+          <h2 class="title">
+            <span data-fr="Du capteur au banc de test," data-en="From the sensor to the test bench,">Du capteur au banc de test,</span><br>
+            <span class="gradient" data-fr="je valide ce qui part sur le terrain." data-en="I validate what goes into the field.">je valide ce qui part sur le terrain.</span>
+          </h2>
+          <p data-fr="Ingénieur en électronique et systèmes embarqués, titulaire d'un Master Électronique, Instrumentation et Informatique Embarquée (Université Claude Bernard Lyon 1)."
+             data-en="Electronics and embedded systems engineer, holding a Master's degree in Electronics, Instrumentation and Embedded Computing (Université Claude Bernard Lyon 1).">
+            Ingénieur en électronique et systèmes embarqués, titulaire d'un Master Électronique, Instrumentation et Informatique Embarquée (Université Claude Bernard Lyon 1).
+          </p>
+          <p data-fr="Chez CVCELEC depuis 2024, je développe des bancs de validation sur microcontrôleur et j'intègre des capteurs et passerelles IoT pour des bâtiments connectés et des sites industriels. J'ai aussi travaillé sur des bancs de test CAN/LIN dans l'automobile (Lear Corporation)."
+             data-en="At CVCELEC since 2024, I develop microcontroller-based validation benches and integrate sensors and IoT gateways for connected buildings and industrial sites. I also worked on CAN/LIN test benches in the automotive industry (Lear Corporation).">
+            Chez CVCELEC depuis 2024, je développe des bancs de validation sur microcontrôleur et j'intègre des capteurs et passerelles IoT pour des bâtiments connectés et des sites industriels. J'ai aussi travaillé sur des bancs de test CAN/LIN dans l'automobile (Lear Corporation).
+          </p>
+
+          <div class="cards-grid">
+            <div class="mini-card">
+              <h3>Firmware embarqué</h3>
+              <p>C/C++, STM32, ATmega2560, Arduino, FreeRTOS</p>
+            </div>
+            <div class="mini-card">
+              <h3>IoT industriel</h3>
+              <p>LoRaWAN, Zigbee, Modbus, passerelles</p>
+            </div>
+            <div class="mini-card">
+              <h3>Bancs de test</h3>
+              <p>Validation capteurs, IHM en C#, CAN/LIN</p>
+            </div>
+            <div class="mini-card">
+              <h3>Électronique</h3>
+              <p>Altium, KiCad, LTspice, Proteus</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PARCOURS ============ -->
+    <section id="parcours" class="section">
+      <div class="container">
+        <span class="eyebrow" data-fr="Parcours" data-en="Experience">Parcours</span>
+        <h2 class="title" data-fr="Parcours professionnel" data-en="Professional experience">Parcours professionnel</h2>
+
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-icon">🏭</div>
+            <article class="card exp-card">
+              <header>
+                <div>
+                  <h3>Ingénieur Électronique Embarquée</h3>
+                  <p class="company">CVCELEC · Lyon, France</p>
+                </div>
+                <span class="date">03/2024 – Présent</span>
+              </header>
+              <h4>Bancs de validation et solutions IoT pour bâtiments et sites industriels</h4>
+              <ul>
+                <li>Configuration, intégration et paramétrage de capteurs intelligents et de passerelles IoT (LoRa/LoRaWAN, Zigbee, Modbus).</li>
+                <li>Développement de bancs de test sur STM32 pour valider les capteurs avant déploiement : protocole Modbus RTU et interface en C# pour visualiser les mesures.</li>
+                <li>Banc de validation de capteurs de niveau d'eau (ATmega2560, C embarqué) : ADC multicanaux, PWM, seuils par interruptions, UART.</li>
+                <li>Installation, mise en service et tests fonctionnels sur site, avec pilotage d'équipe.</li>
+              </ul>
+              <div class="tags"><span>STM32</span><span>ATmega2560</span><span>Modbus RTU</span><span>LoRaWAN</span><span>Zigbee</span><span>C#</span></div>
+            </article>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-icon">🚗</div>
+            <article class="card exp-card">
+              <header>
+                <div>
+                  <h3>Stagiaire Ingénieur Électronique Embarquée</h3>
+                  <p class="company">Lear Corporation · Rabat, Maroc</p>
+                </div>
+                <span class="date">05/2023 – 09/2023</span>
+              </header>
+              <h4>Banc de test automatisé CAN pour unités HVAC</h4>
+              <ul>
+                <li>Conception d'un banc de test automatisé en CAN avec IHM en C# pour piloter, superviser et valider les unités HVAC.</li>
+                <li>Firmware en C sur Arduino Due pour les fonctions de régulation HVAC.</li>
+                <li>Démonstrateurs CAN/LIN, analyse du trafic avec CANalyzer, intégration de calculateurs (fichiers DBC / LDF).</li>
+              </ul>
+              <div class="tags"><span>CAN</span><span>LIN</span><span>CANalyzer</span><span>C#</span><span>Arduino Due</span></div>
+            </article>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-icon">🚆</div>
+            <article class="card exp-card">
+              <header>
+                <div>
+                  <h3>Stage Technicien de Maintenance Industrielle</h3>
+                  <p class="company">ONCF · Maroc</p>
+                </div>
+                <span class="date">05/2019 – 06/2019</span>
+              </header>
+              <h4>Maquette de commande d'un moteur DC (traction ferroviaire)</h4>
+              <ul>
+                <li>Commande PWM, mesure de vitesse et régulation sur Arduino UNO avec pont L298N.</li>
+                <li>Fonctions de freinage et d'arrêt d'urgence pour simuler un système ferroviaire.</li>
+              </ul>
+              <div class="tags"><span>Arduino UNO</span><span>L298N</span><span>PWM</span><span>Encodeur</span></div>
+            </article>
+          </div>
+
+        </div>
+
+        <h3 class="subhead" data-fr="Formation & certificats" data-en="Education & certificates">Formation & certificats</h3>
+        <div class="skills-grid">
+          <div class="card skill-group">
+            <h3>Formation</h3>
+            <ul>
+              <li><strong>2024</strong> · Master 2 Électronique, Instrumentation et Informatique Embarquée, Université Claude Bernard Lyon 1</li>
+              <li><strong>2022</strong> · Licence Électronique Signal Image, Dijon</li>
+              <li><strong>2020</strong> · Licence Pro Systèmes Mécatroniques et Embarqués, Fès (Maroc)</li>
+              <li><strong>2019</strong> · DUT Mécatronique industrielle, Oujda (Maroc)</li>
+            </ul>
+          </div>
+          <div class="card skill-group">
+            <h3>Certificats</h3>
+            <ul>
+              <li>Habilitation électrique BE (CVCELEC)</li>
+              <li>Udemy : Systèmes embarqués, électronique et firmware (C++)</li>
+              <li>Udemy : LoRa et LoRaWAN pour l'Internet des Objets</li>
+              <li>Parcours Programming Advices : C++, algorithmique, structures de données, POO</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJETS ============ -->
+    <section id="projets" class="section">
+      <div class="container">
+        <span class="eyebrow" data-fr="Projets" data-en="Projects">Projets</span>
+        <h2 class="title" data-fr="Projets personnels et académiques" data-en="Personal and academic projects">Projets personnels et académiques</h2>
+
+        <div class="projects-grid">
+
+          <article class="card project">
+            <!-- Quand tu as la photo : <img src="images/nucleo.jpg" alt="NUCLEO-F446RE avec LED externe et bouton poussoir"> -->
+            <div class="placeholder small">[À REMPLIR : photo du montage]</div>
+            <h3>Drivers bare-metal STM32F446RE (GPIO, EXTI, SPI, I2C, USART)</h3>
+            <p>
+              Projet personnel d'apprentissage : écriture en C de drivers de périphériques
+              directement à partir du manuel de référence (RM0390), sans HAL, sur une
+              NUCLEO-F446RE. Adresses, broches et registres vérifiés dans le manuel de la
+              puce et le guide de la carte (UM1724).
+            </p>
+            <ul class="status">
+              <li><strong>Drivers écrits :</strong> GPIO, interruptions EXTI/NVIC, SPI, I2C, USART.</li>
+              <li><strong>Testé sur carte :</strong> communication SPI, I2C et USART avec un Arduino, trames analysées à l'analyseur logique.</li>
+            </ul>
+            <div class="tags">
+              <span>C</span><span>STM32F446</span><span>Bare-metal</span><span>GPIO</span>
+              <span>EXTI/NVIC</span><span>SPI</span><span>I2C</span><span>USART</span>
+              <span>RM0390</span><span>Analyseur logique</span>
+            </div>
+            <a href="https://github.com/DAHOUMOHAMMED/stm32-baremetal-drivers" target="_blank" rel="noopener">Code source →</a>
+          </article>
+
+          <article class="card project">
+            <div class="placeholder small">[À REMPLIR : photo / schéma]</div>
+            <h3>Station météo STM32</h3>
+            <p>Acquisition et affichage en temps réel de mesures avec un capteur DHT22, en langage C.</p>
+            <div class="tags"><span>C</span><span>STM32</span><span>DHT22</span></div>
+          </article>
+
+          <article class="card project">
+            <img src="images/montage.jpg" alt="Montage Arduino UNO et Mega2560 avec capteur HC-SR04">
+            <h3>Chaîne de mesure de distance et liaison UART</h3>
+            <p>Acquisition HC-SR04 sur Arduino UNO, transmission UART vers un Arduino Mega2560, avec un protocole de trame analysé par machine à états et validation des données.</p>
+            <div class="tags"><span>Arduino UNO</span><span>Mega2560</span><span>HC-SR04</span><span>UART</span></div>
+            <a href="https://github.com/DAHOUMOHAMMED/HC-SR04-UART-7Segment" target="_blank" rel="noopener">Code source →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMPÉTENCES ============ -->
+    <section id="competences" class="section">
+      <div class="container">
+        <span class="eyebrow" data-fr="Compétences" data-en="Skills">Compétences</span>
+        <h2 class="title" data-fr="Compétences techniques" data-en="Technical skills">Compétences techniques</h2>
+
+        <div class="skills-grid">
+          <div class="card skill-group">
+            <h3>Langages</h3>
+            <div class="tags"><span>C</span><span>C++</span><span>C#</span><span>Python</span><span>MATLAB/Simulink</span><span>LabVIEW</span></div>
+          </div>
+          <div class="card skill-group">
+            <h3>Microcontrôleurs</h3>
+            <div class="tags"><span>STM32</span><span>ATmega2560</span><span>Arduino</span><span>FreeRTOS</span></div>
+          </div>
+          <div class="card skill-group">
+            <h3>Bus et protocoles</h3>
+            <div class="tags"><span>CAN</span><span>LIN</span><span>SPI</span><span>I2C</span><span>UART</span><span>Ethernet</span><span>Modbus</span><span>Zigbee</span><span>LoRaWAN</span></div>
+          </div>
+          <div class="card skill-group">
+            <h3>Outils</h3>
+            <div class="tags"><span>STM32CubeIDE</span><span>Altium</span><span>KiCad</span><span>LTspice</span><span>Proteus</span><span>CANalyzer</span><span>Diagalyzer</span><span>Visual Studio</span><span>Git</span><span>Analyseur logique</span></div>
+          </div>
+          <div class="card skill-group">
+            <h3>Langues</h3>
+            <div class="tags"><span>Français (C2)</span><span>Anglais (B2)</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section">
+      <div class="container contact card">
+        <h2 class="title" data-fr="Travaillons ensemble" data-en="Let's work together">Travaillons ensemble</h2>
+        <p data-fr="Un projet, une question, une opportunité en systèmes embarqués ou IoT ? N'hésitez pas à m'écrire."
+           data-en="A project, a question, an opportunity in embedded systems or IoT? Feel free to reach out.">
+          Un projet, une question, une opportunité en systèmes embarqués ou IoT ? N'hésitez pas à m'écrire.
+        </p>
+        <div class="hero-buttons center">
+          <a class="btn btn-primary" href="mailto:dahou.mohammed1999@gmail.com">✉ dahou.mohammed1999@gmail.com</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/mohammed-dahou/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-ghost" href="https://github.com/DAHOUMOHAMMED" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Mohammed Dahou</p>
+  </footer>
+
+  <button id="toTop" aria-label="Retour en haut">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
